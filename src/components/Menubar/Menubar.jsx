@@ -43,7 +43,7 @@ const Menubar = () => {
               }`}
               to="/dashboard"
             >
-              Dashboard
+              <i className="bi bi-speedometer2 me-1"></i> Dashboard
             </Link>
           </li>
           <li className="nav-item">
@@ -53,7 +53,7 @@ const Menubar = () => {
               }`}
               to="/explore"
             >
-              Explore
+              <i className="bi bi-search me-1"></i> Explore
             </Link>
           </li>
           {isAdmin && (
@@ -65,7 +65,7 @@ const Menubar = () => {
                   }`}
                   to="/items"
                 >
-                  Manage Items
+                  <i className="bi bi-card-list me-1"></i> Manage Items
                 </Link>
               </li>
               <li className="nav-item">
@@ -75,7 +75,7 @@ const Menubar = () => {
                   }`}
                   to="/category"
                 >
-                  Manage Categories
+                  <i className="bi bi-tags me-1"></i> Manage Categories
                 </Link>
               </li>
               <li className="nav-item">
@@ -85,7 +85,7 @@ const Menubar = () => {
                   }`}
                   to="/users"
                 >
-                  Manage Users
+                  <i className="bi bi-people me-1"></i> Manage Users
                 </Link>
               </li>
             </>
@@ -97,7 +97,7 @@ const Menubar = () => {
               }`}
               to="/orders"
             >
-              Order History
+              <i className="bi bi-clock-history me-1"></i> Order History
             </Link>
           </li>
         </ul>
@@ -118,16 +118,16 @@ const Menubar = () => {
               aria-labelledby="navbarDropdown"
             >
               <a href="#!" className="dropdown-item">
-                Settings
+                <i className="bi bi-gear-fill me-2"></i> Settings
               </a>
               <a href="#!" className="dropdown-item">
-                Activity log
+                <i className="bi bi-journal-text me-2"></i> Activity log
               </a>
               <li>
                 <hr className="dropdown-divider" />
               </li>
               <a href="#!" className="dropdown-item" onClick={logout}>
-                Logout
+                <i className="bi bi-box-arrow-right me-2"></i> Logout
               </a>
             </ul>
           </li>

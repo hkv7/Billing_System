@@ -189,14 +189,26 @@ const CartSummary = ({
           onClick={() => completePayment("cash")}
           disabled={isProcessing}
         >
-          {isProcessing ? "Processing..." : "Cash"}
+          {isProcessing ? (
+            "Processing..."
+          ) : (
+            <>
+              <i className="bi bi-cash-stack me-2"></i> Cash
+            </>
+          )}
         </button>
         <button
           className="btn btn-primary flex-grow-1"
           onClick={() => completePayment("upi")}
           disabled={isProcessing}
         >
-          {isProcessing ? "Processing..." : "UPI"}
+          {isProcessing ? (
+            "Processing..."
+          ) : (
+            <>
+              <i className="bi bi-wallet2 me-2"></i> UPI
+            </>
+          )}
         </button>
       </div>
       <div className="d-flex gap-3 mt-3">
@@ -205,7 +217,10 @@ const CartSummary = ({
           onClick={placeOrder}
           disabled={isProcessing}
         >
-          Place Order
+          <i className="bi bi-bag-plus me-2"></i> Place Order
+        </button>
+        <button className="btn btn-outline-secondary" onClick={handlePrintReceipt}>
+          <i className="bi bi-printer me-1"></i>
         </button>
       </div>
       {showPopup && (
