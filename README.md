@@ -1,6 +1,8 @@
 # Billing System — Client (React + Vite)
 
-This repository contains the frontend client for a simple billing / point-of-sale web application built with React and Vite. The client consumes a REST API (expected at http://localhost:8080) and provides UI for browsing items, managing a shopping cart, creating orders and handling payments. It also contains admin pages for managing categories, items and users.
+[![React](https://img.shields.io/badge/react-19.1.1-61DAFB?logo=react&logoColor=white)](https://reactjs.org) [![Vite](https://img.shields.io/badge/vite-7.1.7-646cff?logo=vite&logoColor=white)](https://vitejs.dev) [![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen?logo=node.js&logoColor=white)](https://nodejs.org) [![License](https://img.shields.io/badge/license-Unspecified-lightgrey)](#)
+
+:sparkles: This repository contains the frontend client for a simple billing / point-of-sale web application built with React and Vite. The client consumes a REST API (expected at http://localhost:8080) and provides UI for browsing items, managing a shopping cart, creating orders and handling payments. It also contains admin pages for managing categories, items and users.
 
 ## Key Features
 - Browse items and categories
